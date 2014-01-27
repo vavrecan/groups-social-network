@@ -1,0 +1,35 @@
+<?php
+return array(
+    "version" => "1.21.213",
+    "version_codename" => "lobster",
+    "version_date" => "05-11-2013",
+
+    "base" => (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on" ? "/groups/api/" : "/"),
+    "site_url" => "http://" . $_SERVER['SERVER_NAME'] . (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on" ? "/groups/api/" : "/"),
+    "environment" => "development",
+    "maintenance" => false,
+
+    "moderation_require_https" => false,
+
+    "images_upload_path" => __DIR__ . "/images/org/",
+    "images_url" => "//" . $_SERVER['SERVER_NAME'] . (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on" ? "/groups/api/" : "/") . "images/org/",
+    "images_formats" => array(
+        "org" => "//" . $_SERVER['SERVER_NAME'] . (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on" ? "/groups/api/" : "/") . "images/org/",
+        "p50x50" => "//" . $_SERVER['SERVER_NAME'] . (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on" ? "/groups/api/" : "/") . "images/p50x50/",
+        "p150x150" => "//" . $_SERVER['SERVER_NAME'] . (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on" ? "/groups/api/" : "/") . "images/p150x150/",
+        "p300x300" => "//" . $_SERVER['SERVER_NAME'] . (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on" ? "/groups/api/" : "/") . "images/p300x300/"
+    ),
+
+    "time_format" => "",
+    "database" => array(
+        "dns" => "mysql:host=localhost;dbname=groups_around_me",
+        "username" => "",
+        "password" => "",
+    ),
+
+    "subscriptions" => array(
+        "enabled" => true,
+        "port" => "unix://" . __DIR__ . "/subscriptions/subscriptions.socket",
+        "secret" => ""
+    )
+);

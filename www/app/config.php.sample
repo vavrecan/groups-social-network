@@ -1,0 +1,10 @@
+<?php
+return array(
+    "base" => "/",
+    "base_assets" => "/assets/static/",
+    "site_url" => "http://" . $_SERVER['SERVER_NAME'] . "/",
+    "environment" => "development",
+    "maintenance" => false,
+
+    "api_url" => "http://api.groupsaround.me",
+);
