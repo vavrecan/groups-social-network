@@ -3,8 +3,8 @@ Groups Around Me Social Network
 
 Simple social network for groups with comments, likes, notifications, activity log.
 
-- [Demo at groupsaround.me](http://groupsaround.me)
-- [List of supported methods](http://api.groupsaround.me/tools/documentation/)
+- [Demo at groupsaround.me](http://groups.iluzia.cz)
+- [List of supported methods](http://groups-api.iluzia.cz/tools/documentation/)
 
 ## Author
 - [Marek Vavrecan](mailto:vavrecan@gmail.com)
