@@ -1,7 +1,7 @@
 <?php
 $config = include("../../config.php");
 $base = rtrim($config["base"], "/");
-$siteUrl = "http://groupsaround.me";
+$siteUrl = "http://groups.iluzia.cz";
 ?>
 <!DOCTYPE html>
 <html>

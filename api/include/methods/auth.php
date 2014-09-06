@@ -178,7 +178,7 @@ class Auth extends MethodHandler
             ));
 
         // send verification email
-        $verifyUrl = "http://api.groupsaround.me/auth/verify";
+        $verifyUrl = "http://groups.iluzia.cz/auth/verify";
 
         if (isset($this->params["verify_url"]))
             $verifyUrl = $this->params["verify_url"];
